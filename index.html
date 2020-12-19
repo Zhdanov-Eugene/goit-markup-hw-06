@@ -481,14 +481,26 @@
             </li>
           </ul>
         </div>
-
-        <form class="form js-speaker-form">
-          <b>Подпишитесь на рассылку</b>
-          <label for="name"></label>
-          <input type="text" name="name" id="name" />
-
-          <button type="submit">Подписаться</button>
-        </form>
+        <div class="subscription">
+          <p>Подпишитесь на рассылку</p>
+          <form class="form js-speaker-form">
+            <label class="visually-hidden" for="subscription"
+              >Електронная почта</label
+            >
+            <input
+              type="email"
+              name="subscription"
+              id="subscription"
+              placeholder="E-mail"
+            />
+            <button class="subscription-button" type="submit">
+              Подписаться
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#icon-telegram-icon-send-1"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
