@@ -1,10 +1,3 @@
-/**********************************************
-***** ПРИВИЛО - порядок записи css свойств*****
-1*position-позиционирование;
-2*геометрия-высота, ширина, отступ;
-3*текст-шрифт, жирность, центрирование и т.д;
-4*оформление-цвет;
-***********************************************/
 :root {
   --body-color: #ffffff;
   --hero-text-color: #757575;
@@ -178,7 +171,8 @@ img {
 .site-nav .item + .item {
   margin-left: 50px;
 }
-/* В главной навигации, при помощи псевдоэлемента, сделано подчёркивание текущей ссылки */
+/* В главной навигации, при помощи псевдоэлемента,
+ сделано подчёркивание текущей ссылки */
 .site-nav .link {
   position: relative;
   display: block;
@@ -327,7 +321,7 @@ img {
   height: 581px;
 
   margin: 0;
-  padding: 0;
+  padding: 40px;
 
   background-color: var(--body-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -369,6 +363,8 @@ img {
   cursor: pointer;
 }
 
+/* форма заявки в модальном окне */
+
 /* ..........Section.......... */
 /* .section {
   padding-top: 94px;
@@ -406,7 +402,7 @@ img {
   padding-bottom: 94px;
 }
 
-/* ...........features............*/
+/* ...........ОСОБЕННОСТИ-features............*/
 .feature-list {
   display: flex;
 }
@@ -477,7 +473,6 @@ img {
 .icon-astronaut::before {
   background-image: url();
 }  */
-
 /* альтернатива без доп.класса*/
 /* .feature-list .items:nth-child(1)::before {
   background-image: url();
@@ -487,7 +482,8 @@ img {
 } */
 
 /************** чем мы занимаемся ************/
-/* В секции Чем мы занимаемся текст спозиционирован поверх изображения. */
+/* В секции Чем мы занимаемся текст
+ спозиционирован поверх изображения */
 .desc {
   position: relative;
   display: flex;
@@ -767,7 +763,7 @@ img {
   background-color: var(--accent-color);
 }
 
-/* subscription подписка*/
+/* subscription- форма подписки на рассылку в футере*/
 
 .subscription p {
   margin-top: 0px;
@@ -964,11 +960,9 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-
   letter-spacing: 0.03em;
 
   margin: 63px 24px;
-
   color: var(--body-color);
 
   transition: transform var(--transition-time) var(--time-distribution-function);
@@ -1010,16 +1004,10 @@ img {
   padding-bottom: 20px;
 }
 
-/* Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 28px;
- or 156% ---
- top-bottom 63
- left right 24
-
- 
-letter-spacing: 0.03em;
-color: #FFFFFF;
-background: rgba(33, 150, 243, 0.9); колор виезжаючего окна*/
+/**********************************************
+***** ПРИВИЛО - порядок записи css свойств*****
+1*position-позиционирование;
+2*геометрия-высота, ширина, отступ;
+3*текст-шрифт, жирность, центрирование и т.д;
+4*оформление-цвет;
+***********************************************/
