@@ -215,6 +215,8 @@ img {
 
 /* =======footer======= */
 
+/* контейнера футера */
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -225,20 +227,54 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* .address-footer {
-  margin-top: 0px;
-  margin-bottom: 60px;
+.footer .container {
+  display: flex;
+  align-items: baseline;
 }
-.footer .list {
-  margin-top: 0px;
-  margin-bottom: 0px;
-} */
 
+.addres-info {
+  margin: 0px;
+  width: 230px;
+
+  outline: 1px solid red;
+}
+
+.footer .socials {
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+
+  outline: 1px solid red;
+}
+
+.subscription {
+  width: 570px;
+  margin-left: 93px;
+
+  outline: 1px solid red;
+}
+
+/* якорь-лого-компании */
 .nav-footer {
   margin-top: 0px;
   margin-bottom: 20px;
 }
+.logo-footer {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.web-footer {
+  color: var(--accent-color);
+}
+.studio-footer {
+  color: var(--body-color);
+}
 
+/* адресс */
 .adds-webstudio {
   color: var(--body-color);
   font-weight: 400;
@@ -265,40 +301,7 @@ img {
   color: var(--accent-color);
 }
 
-.logo-footer {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  letter-spacing: 0.03em;
-}
-
-.web-footer {
-  color: var(--accent-color);
-}
-
-.studio-footer {
-  color: var(--body-color);
-}
-
-.addres-info {
-  margin-right: 70px;
-  max-width: 230px;
-}
-
-.footer .socials {
-  margin: 0px;
-  width: 206px;
-  height: 80px;
-}
-
-.footer .container {
-  display: flex;
-  align-items: baseline;
-  /* height: 252px; */
-}
-
+/* соц-сети */
 .socials .title {
   font-style: normal;
   font-weight: 700;
@@ -337,6 +340,64 @@ img {
 .footer .socials a:hover,
 .footer .socials a:focus {
   background-color: var(--accent-color);
+}
+
+/* subscription подписка*/
+
+.subscription p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--body-color);
+}
+
+.subscription .form {
+  display: flex;
+}
+.subscription .form input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding: 15px 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+  color: var(--form-visually-hidden-placeholder-color);
+  border: 1px solid var(--form-input-border-solid-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  background-color: transparent;
+  transition: var(--transition-time) var(--time-distribution-function);
+}
+
+.footer .subscription input:hover,
+.footer .subscription input:focus {
+  color: var(--body-color);
+  border: 1px solid var(--accent-color);
+}
+
+.footer .button-subscription {
+  display: flex;
+  align-items: center;
+
+  padding-right: 28px;
+  padding-left: 29px;
+}
+
+.footer .button-subscription svg {
+  fill: currentColor;
+  margin-left: 10px;
 }
 
 /*---------- finish------------ */

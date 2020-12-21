@@ -290,8 +290,7 @@
         <div class="addres-info">
           <nav class="nav-footer">
             <a class="logo-footer" href="./index.html">
-              <span class="web-footer">Web</span
-              ><span class="studio-footer">Studio</span>
+              <b class="web-footer">Web</b><b class="studio-footer">Studio</b>
             </a>
           </nav>
 
@@ -346,7 +345,28 @@
             </li>
           </ul>
         </div>
+        <div class="subscription">
+          <p>Подпишитесь на рассылку</p>
+          <form class="form js-speaker-form">
+            <label class="visually-hidden" for="subscription"
+              >Електронная почта</label
+            >
+            <input
+              type="email"
+              name="subscription"
+              id="subscription"
+              placeholder="E-mail"
+            />
+            <button class="button-subscription" type="submit">
+              Подписаться
+              <svg width="24" height="24">
+                <use href="./images/sprite.svg#icon-telegram-icon-send-1"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
+    <script src="./js/form.js"></script>
   </body>
 </html>

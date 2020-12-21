@@ -7,11 +7,11 @@
 ***********************************************/
 :root {
   --body-color: #ffffff;
-  --primary-text-color: #757575;
+  --hero-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --text-logo-color: #000000;
-  --button-primary-color-hover: #188ce8;
+  --button-hero-color-hover: #188ce8;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --team-back-color: #f5f4fa;
   --bg-footer-color: #2f303a;
@@ -36,7 +36,7 @@ html {
 
 body {
   background-color: var(--body-color);
-  color: var(--primary-text-color);
+  color: var(--hero-text-color);
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
@@ -55,6 +55,43 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+/* общая стилизация кнопок */
+.button-hero,
+.button-subscription,
+.button-modal {
+  min-width: 200px;
+  max-height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--body-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  border: 1px solid transparent;
+  transition: var(--transition-time) var(--time-distribution-function),
+    background-color var(--transition-time) var(--time-distribution-function);
+}
+
+.button-hero:hover,
+.button-hero:focus,
+.button-subscription:hover,
+.button-subscription:focus,
+.button-modal:hover,
+.button-modal:focus {
+  background-color: var(--body-color);
+  color: var(--title-text-color);
+  cursor: pointer;
 }
 
 /* .....утилиты....... */
@@ -191,7 +228,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  color: var(--primary-text-color);
+  color: var(--hero-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -254,32 +291,10 @@ img {
 }
 
 /* ...........Button........... */
-.button-primary {
-  min-width: 200px;
-  min-height: 50px;
-
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: var(--body-color);
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  border: 1px solid transparent;
-  padding: 10px 32px;
+.button-hero {
+  padding-left: 32px;
+  padding-right: 32px;
   display: inline-block;
-}
-
-.button-primary:hover,
-.button-primary:focus {
-  background-color: var(--body-color);
-  color: var(--title-text-color);
 }
 
 /* Модальное окно */
@@ -788,12 +803,26 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   background-color: transparent;
+  transition: var(--transition-time) var(--time-distribution-function);
 }
 
 .footer .subscription input:hover,
 .footer .subscription input:focus {
   color: var(--body-color);
   border: 1px solid var(--accent-color);
+}
+
+.footer .button-subscription {
+  display: flex;
+  align-items: center;
+
+  padding-right: 28px;
+  padding-left: 29px;
+}
+
+.footer .button-subscription svg {
+  fill: currentColor;
+  margin-left: 10px;
 }
 
 /*---------- finish------------ */
