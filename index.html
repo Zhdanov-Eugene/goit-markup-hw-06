@@ -64,18 +64,67 @@
         </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-            <form action="">
-              <button type="button" data-modal-close>
-                <svg width="11" height="11">
-                  <use href="./images/sprite.svg#icon-Vector"></use>
-                </svg>
-              </button>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Possimus nisi nesciunt distinctio quos, assumenda fugit sint vel
-                adipisci quidem nobis. Quo facere perspiciatis officiis expedita
-                impedit ab tempore sed unde.
-              </p>
+            <button type="button" data-modal-close>
+              <svg width="11" height="11">
+                <use href="./images/sprite.svg#icon-Vector"></use>
+              </svg>
+            </button>
+            <p class="title">Оставьте свои данные, мы вам перезвоним</p>
+
+            <form class="form">
+              <div class="modal-form">
+                <label>
+                  <p class="title-name">Имя</p>
+                  <div class="input-files">
+                    <input name="name" type="name" />
+                    <svg class="icon" width="18" height="18">
+                      <use href="./images/sprite.svg#icon-person-black"></use>
+                    </svg>
+                  </div>
+                </label>
+
+                <label>
+                  <p class="title-name">Телефон</p>
+                  <div class="input-files">
+                    <input name="tel" type="tel" />
+                    <svg class="icon" width="18" height="18">
+                      <use href="./images/sprite.svg#icon-phone-black"></use>
+                    </svg>
+                  </div>
+                </label>
+
+                <label>
+                  <div class="title-name">Почта</div>
+                  <div class="input-files">
+                    <input name="email" type="email" />
+                    <svg class="icon" width="18" height="18">
+                      <use href="./images/sprite.svg#icon-email-black"></use>
+                    </svg>
+                  </div>
+                </label>
+                <label>
+                  <div class="title-name">Комментарий</div>
+                  <textarea name="comment" placeholder="Введите текст">
+                  </textarea>
+                </label>
+              </div>
+              <div class="check">
+                <label>
+                  <input
+                    class="visually-hidden"
+                    name="accept"
+                    type="checkbox"
+                  />
+                  <span class="svg-check">
+                    <svg class="icon" width="16" height="15">
+                      <use href="./images/sprite.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  Соглашаюсь с рассылкой и принимаю
+                  <a href="">Условия договора</a>
+                </label>
+              </div>
+              <button class="submit-button" type="submit">Отправить</button>
             </form>
           </div>
         </div>
