@@ -364,20 +364,6 @@ img {
 }
 
 /* форма заявки в модальном окне */
-
-.form {
-  padding: 0px;
-  margin: 0px;
-}
-
-.modal-form {
-  display: flex;
-  flex-direction: column;
-  height: 342px;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
 .modal .title {
   margin-top: 0px;
   margin-bottom: 12px;
@@ -393,6 +379,20 @@ img {
   color: var(--title-text-color);
 }
 
+.form {
+  padding: 0px;
+  margin: 0px;
+}
+/*  */
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  height: 342px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+/*  */
+
 .modal-form .title-name {
   margin-top: 0px;
   margin-bottom: 4px;
@@ -404,36 +404,45 @@ img {
 
   color: var(--hero-text-color);
 }
-
-.form .input-files {
+/*  */
+.modal-form .input-files {
   position: relative;
   margin-bottom: 10px;
 }
 
-.form .input-files input {
+.input-files input {
+  height: 40px;
+  padding: 12px 16px 12px 42px;
+}
+.input-files input {
   width: 100%;
-  padding: 0px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  background-color: transparent;
+
+  width: 100%;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition: var(--transition-time) var(--time-distribution-function);
+  transition: fill var(--transition-time) var(--time-distribution-function),
+    border var(--transition-time) var(--time-distribution-function);
 }
-
-.modal-form .icon {
+/*  */
+.input-files svg {
   position: absolute;
-
   top: 50%;
   left: 12px;
-
+  fill: var(--title-text-color);
   transform: translateY(-50%);
   transition: var(--transition-time) var(--time-distribution-function);
 }
 
-.form .input-files input .icon:hover,
-.form .input-files input .icon:focus {
-  color: var(--accent-color);
+.form .lable + svg:hover,
+.form .lable + svg:focus {
+  fill: var(--accent-color);
 }
 
 /* ..........Section.......... */
