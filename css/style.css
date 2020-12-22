@@ -413,9 +413,6 @@ img {
 .input-files input {
   height: 40px;
   padding: 12px 16px 12px 42px;
-}
-.input-files input {
-  width: 100%;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
@@ -427,7 +424,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition: fill var(--transition-time) var(--time-distribution-function),
+  transition: color var(--transition-time) var(--time-distribution-function),
     border var(--transition-time) var(--time-distribution-function);
 }
 /*  */
@@ -440,8 +437,8 @@ img {
   transition: var(--transition-time) var(--time-distribution-function);
 }
 
-.form .lable + svg:hover,
-.form .lable + svg:focus {
+.input-files input + svg:hover,
+.input-files input + svg:focus {
   fill: var(--accent-color);
 }
 
